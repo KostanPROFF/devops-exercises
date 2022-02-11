@@ -85,24 +85,24 @@
 ## Network
 
 <details>
-<summary>What do you need in order to communicate?</summary><br><b>
+<summary>Что вам нужно для общения?</summary><br><b>
 
-  - A common language (for the two ends to understand)
-  - A way to address who do you want to communicate with
-  - A Connection (so the content of of the communication can reach the recipients)
+  - Общий язык (чтобы обе стороны понимали друг друга)
+  - Способ обращения к тому, с кем вы хотите общаться
+  - Связь (чтобы содержание сообщения могло дойти до получателей)
 </b></details>
 
 <details>
-<summary>What is TCP/IP?</summary><br><b>
+<summary>Что такое TCP/IP?</summary><br><b>
 
-A set of protocols that define how two or more devices can communicate with each other.
-To learn more about TCP/IP, read [here](http://www.penguintutor.com/linux/basic-network-reference)
+Набор протоколов, определяющих, как два или более устройств могут взаимодействовать друг с другом.
+Чтобы узнать больше о TCP/IP, прочитайте статью [here](http://www.penguintutor.com/linux/basic-network-reference)
 </b></details>
 
 <details>
-<summary>What is Ethernet?</summary><br><b>
+<summary>Что такое Ethernet?</summary><br><b>
 
-Ethernet simply refers to the most common type of Local Area Network (LAN) used today. A LAN—in contrast to a WAN (Wide Area Network), which spans a larger geographical area—is a connected network of computers in a small area, like your office, college campus, or even home.
+Ethernet - это наиболее распространенный тип локальной вычислительной сети (ЛВС), используемый сегодня. Локальная сеть - в отличие от глобальной сети (WAN), которая охватывает большую географическую область - представляет собой соединенную сеть компьютеров на небольшой территории, например, в вашем офисе, студенческом городке или даже дома.
 </b></details>
 
 <details>
