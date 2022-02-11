@@ -1,54 +1,54 @@
-## How to prepare for DevOps/SRE/Production Engineer interviews?
+## Как подготовиться к собеседованиям DevOps/SRE/Production Engineer?
  
-Note: the following is opinionated.
+Примечание: нижеследующее является мнением.
  
-### Skills you should have
+### Навыки, которыми вы должны обладать
  
 #### Linux
  
-Every DevOps Engineer should have a deep understanding of at least one operating system and if you have the option to choose then I would say it should definitely be Linux as I believe it's a requirement of at least 90% of the DevOps jobs postings out there.
+Каждый DevOps-инженер должен иметь глубокое понимание хотя бы одной операционной системы, и если у вас есть возможность выбора, то я бы сказал, что это должен быть Linux, так как я считаю, что это требование по крайней мере 90% объявлений о вакансиях DevOps.
  
-Usually, the followup question is "How extensive should my knowledge be?" Out of all the DevOps skills, I would say this, along with coding, should be your strongest skills. Be familiar with OS processes, debugging tools, filesystem, networking, ... know your operating system, understand how it works, how to manage issues, etc.
+Обычно последующий вопрос звучит так: "Насколько обширными должны быть мои знания?". Из всех навыков DevOps я бы сказал, что это, наряду с кодированием, должны быть ваши самые сильные навыки. Будьте знакомы с процессами ОС, инструментами отладки, файловой системой, сетью, ... знайте свою операционную систему, понимайте, как она работает, как справляться с проблемами и т.д.
 
-Not long ago, I've created a list of Linux resources right [here](https://dev.to/abregman/collection-of-linux-resources-3nhk). There are some good sites there that you can use for learning more about Linux.
+Не так давно я создал список ресурсов по Linux вот здесь (https://dev.to/abregman/collection-of-linux-resources-3nhk). Там есть несколько хороших сайтов, которые вы можете использовать для изучения Linux.
  
-#### Programming
+#### Программирование
  
-My personal belief is that any DevOps engineer should know programming, at least to some degree. Having this skill you can automate manual processes, improve some of the open source tools you are using today or build new tools & projects to provide a solution to existing problems. Knowing how to code =  a lot of power.
+Я считаю, что любой инженер DevOps должен знать программирование, по крайней мере, в некоторой степени. Обладая этим навыком, вы можете автоматизировать ручные процессы, улучшить некоторые из инструментов с открытым исходным кодом, которые вы используете сегодня, или создать новые инструменты и проекты для решения существующих проблем. Знание кода = большая сила.
 
-When it comes to interviews you'll notice that the level of knowledge very much depends on the company or position you are interviewing for. Some will require you just to be able to write simple scripts while others will deep dive into complex algorithms and data structures.
+Когда дело дойдет до собеседования, вы заметите, что уровень знаний во многом зависит от компании или должности, на которую вы претендуете. Некоторые из них требуют от вас просто умения писать простые скрипты, в то время как другие глубоко погружаются в сложные алгоритмы и структуры данных.
 
-The best way to practice this skill is by doing some actual coding - scripts, online challenges, CLI tools, web applications, ... just code :)
+Лучший способ отработать этот навык - это реальное кодирование: скрипты, онлайн-задачи, инструменты CLI, веб-приложения, ... просто код :)
 
-Also, the following is probably clear to most people but let's still clarify it: when given the chance to choose any language for answering coding tasks/questions, choose the one you have experience with! Some candidates prefer to choose the language they think the company is using and this is a huge mistake since giving the right answer is always better than a wrong answer, no matter which language you have used :)
+Также, вероятно, большинству людей понятно следующее, но давайте все же уточним: когда вам дают возможность выбрать любой язык для ответа на задания/вопросы по кодированию, выбирайте тот, с которым у вас есть опыт! Некоторые кандидаты предпочитают выбирать тот язык, который, по их мнению, использует компания, и это большая ошибка, поскольку правильный ответ всегда лучше неправильного, независимо от того, какой язык вы использовали :)
  
-I recommend the following sites for practicing coding:
+Я рекомендую следующие сайты для практики кодирования:
                                                  
 * [HackerRank](https://www.hackerrank.com)
 * [LeetCode](https://leetcode.com)               
 * [Exercism](https://exercism.io)
  
-Starting your own project is also a good idea. More on that later on.
+Также хорошей идеей является создание собственного проекта. Подробнее об этом позже.
 
-#### Architecture and Design
+#### Архитектура и дизайн
   
-This is also an important aspect of DevOps. You should be able to describe how to design different systems, workflows, and architectures. Also, the scale is an important aspect of that. A design which might work for a dozen of hosts or X amount of data, will not necessarily work well with bigger scale.
+Это также важный аспект DevOps. Вы должны уметь описать, как проектировать различные системы, рабочие процессы и архитектуры. Также важным аспектом является масштаб. Дизайн, который может работать для дюжины хостов или X объема данных, не обязательно будет хорошо работать при большем масштабе.
  
-Some ideas for you to explore: 
+Некоторые идеи для изучения: 
                                
-* How to design and implement a CI pipeline (or pipelines) for verifying PRs, run multiple different types of tests, package the project and deploy it somewhere
-* How to design and implement secured ELK architecture which will get logs from 10,000 apps and will display the data eventually to the user
-* Microservices designs are also quite popular these days
+* Как разработать и реализовать CI-конвейер (или конвейеры) для проверки PR, запуска нескольких различных типов тестов, упаковки проекта и его развертывания где-либо.
+* Как спроектировать и реализовать защищенную архитектуру ELK, которая будет получать логи от 10 000 приложений и отображать данные пользователю.
+* Микросервисы также довольно популярны в наши дни.
                        
-I recommend going over the following GitHub projects as they are really deep-diving into System Design:
+Я рекомендую ознакомиться со следующими проектами на GitHub, поскольку они действительно глубоко погружены в проектирование систем:
                                
 * https://github.com/donnemartin/system-design-primer
                                
-#### Tools           
+#### Инструменты           
                                
-Some interviews will focus on specific tools or technologies. Which tools? this is mainly based on a combination of what you mentioned in your C.V & those that are mentioned in the job posting and used in the company. Here are some questions I believe anyone should know to answer regarding the tools he/she is familiar with:
+Некоторые собеседования будут посвящены конкретным инструментам или технологиям. Какие инструменты? Это в основном основано на сочетании того, что вы упомянули в своем резюме и тех, которые упоминаются в объявлении о вакансии и используются в компании. Вот несколько вопросов, на которые, по моему мнению, каждый должен знать ответы относительно инструментов, с которыми он знаком:
                                
-* What the tool does? What it allows us to achieve that we couldn't do without it?                            
+* Что делает инструмент? What it allows us to achieve that we couldn't do without it?                            
 * What its advantages over other tools in the same area, with the same purpose? Why you specifically using it?
 * How it works?                
 * How to use it?               
@@ -63,63 +63,64 @@ This is a great way to prepare for interviews and I recommend to try it out befo
                                
 "Knowledge in CI/CD" -> Scenario: create a CI/CD pipeline for a project.
                                
-At this point, some people ask: "but what project?" and the answer is: what about GitHub? it has only 9125912851285192 projects...and a free way to set up CI to any of them (also a great way to learn how to collaborate with others :) )
+В этот момент некоторые люди спрашивают: "Но какого проекта?", и ответ: а как насчет GitHub? На нем всего 9125912851285192 проекта... и бесплатный способ настроить CI для любого из них (также отличный способ научиться сотрудничать с другими :) ).
                                
-Let's convert another scenario:                                                                                                                                              
+Давайте преобразуем другой сценарий:                                                                                                                                              
                                
-"Experience with provisioning servers" -> Scenario: provision a server (to make it more interesting: create a web server).
+"Experience with provisioning servers" -> Scenario: provision a server (чтобы было интереснее: создайте веб-сервер).
 
-And the last example:                                                                                                                                                        
+И последний пример:                                                                                                                                                        
   
-"Experience with scripting" -> Scenario: write a script. Don't waste too much time thinking "what script should I write?". Simply automate something you are doing manually or even implement your own version of common small utils.
+"Опыт работы со сценариями" -> Сценарий: написать сценарий. Не тратьте много времени на размышления "какой скрипт мне написать?". Simply automate something you are doing manually or even implement your own version of common small utils.
   
 ### Start your own DevOps project
   
-Starting a DevOps project is a good idea because:
+Начать DevOps-проект - хорошая идея, потому что:
   
-* It will make you practice coding
-* It will be something you can add to your resume and talk about with the interviewer
-* Depends on size and complexity, it can teach you something about design in general
-* Depends on adoption, it can teach you about managing Open Source projects
+* Это заставит вас практиковаться в кодировании
+* Это будет то, что вы сможете добавить в свое резюме и обсудить с интервьюером.
+* В зависимости от размера и сложности, это может научить вас чему-то о дизайне в целом.
+* В зависимости от внедрения, это может научить вас управлять проектами с открытым исходным кодом.
   
-Same here, don't overthink what your project should be about. Just go and build something :)
+То же самое, не думайте слишком много о том, каким должен быть ваш проект. Просто идите и создайте что-нибудь :)
   
-### Sample interview questions
+### Примерные вопросы для собеседования
   
-Make a sample list of interview questions on various topics/areas like technical, company, role, ... and try to answer them.
-See if you can manage to answer them in a fluent, detailed way.
+Составьте примерный список вопросов для интервью по различным темам/областям, таким как технические, компания, роль, ... и попробуйте ответить на них.
+Посмотрите, сможете ли вы ответить на них бегло и подробно.
   
-Better yet, ask a good friend/colleague to challenge you with some questions. Your self-awareness might be an obstacle in objective self-review of your knowledge :)
+Еще лучше попросить хорошего друга/коллегу задать вам несколько вопросов. Ваш самоанализ может стать препятствием для объективной самопроверки своих знаний :)
   
-### Networking
+### Нетворкинг
   
-For those who attend technical meetups and conferences, it can be a great opportunity to chat with people from other companies on their interviewing process. But don't start with it, it can be quite awkward. Say at least hello first... (:
+Для тех, кто посещает технические встречи и конференции, это может быть отличной возможностью пообщаться с людьми из других компаний об их процессе собеседования. Но не начинайте с этого, это может быть довольно неловко. Сначала хотя бы поздоровайтесь... (:
   
-Doing so can give you a lot of information on what to expect from an interview at some companies or how to better prepare.
+Это может дать вам много информации о том, чего ожидать от собеседования в некоторых компаниях или как лучше подготовиться.
   
-### Know your resume
+### Знайте свое резюме
   
-It may sound trivial but the idea here is simple: be ready to answer any question regarding any line you included in your resume.
-Sometimes candidates surprised when they are asked on a skill or line which seems to be not related to the position but the simple truth is: if you mentioned something on your resume, it's only fair to ask you about it.
+Это может показаться банальным, но идея здесь проста: будьте готовы ответить на любой вопрос, касающийся любой строчки, которую вы включили в свое резюме.
+Иногда кандидаты удивляются, когда их спрашивают о навыке или строке, которая, казалось бы, не имеет отношения к вакансии, но простая истина такова: если вы упомянули что-то в своем резюме, будет справедливо спросить вас об этом.
 
 
-### Know the company
+### Знайте компанию
 
-Be familiar with the company you are interviewing at. Some ideas:
+Будьте знакомы с компанией, в которой вы проходите собеседование. Некоторые идеи:
 
-  * What the company does?
-  * What products it has?
-  * Why its products are unique (or better than other products)? This can also be a good question for you to ask
+  * Чем занимается компания?
+  * Какие у нее есть продукты?
+  * Почему ее продукция уникальна (или лучше других продуктов)? Это также может быть хорошим вопросом для вас, чтобы спросить
 
-### Books
 
-From my experience, this is not done by many candidates but it's one of the best ways to deep dive into topics like operating system, virtualization, scale, distributed systems, etc.    
+### Книги
 
-In most cases, you will do fine without reading books but for the AAA interviews (hardest level) you'll want to read some books and overall if you inspire to be better DevOps Engineer, books (also articles, blog posts) is a great way :)
+По моему опыту, это делают не многие кандидаты, но это один из лучших способов глубоко погрузиться в такие темы, как операционная система, виртуализация, масштабирование, распределенные системы и т.д.    
 
-### Consider starting in non-DevOps position
+В большинстве случаев вы прекрасно обойдетесь без чтения книг, но на собеседованиях AAA (самый сложный уровень) вы захотите прочитать несколько книг, и в целом, если вы хотите стать лучшим DevOps Engineer, книги (также статьи, посты в блогах) - это отличный способ :)
 
-While not a preparation step, you should know that landing DevOps as a first position can be challenging. No, it's not impossible but still, since DevOps covers many different practices, tools, ... it can be quite challenging and also overwhelming for someone to try and achieve it as a first position.<br>
+### Рассмотрите возможность начать работу в должности, не связанной с DevOps.
+
+Хотя это и не подготовительный шаг, вы должны знать, что работа в DevOps в качестве первой позиции может быть сложной. No, it's not impossible but still, since DevOps covers many different practices, tools, ... it can be quite challenging and also overwhelming for someone to try and achieve it as a first position.<br>
 A possible path to becoming a DevOps engineer is to start with actually a different (but related) position and switch from there after 1-2 years or more.
 
 Some ideas:
@@ -130,26 +131,26 @@ Some ideas:
                                                                            
 ### What to expect from a DevOps interview?                                
                                                                            
-DevOps interviews can be very different. Some will include design questions, some will focus on coding, others will include short technical questions and you might even have an interview where the interviewer only goes over your resume and discussing your past experience.
+Собеседования DevOps могут быть очень разными. Некоторые из них включают вопросы по дизайну, другие - по кодированию, третьи - короткие технические вопросы, и даже может быть собеседование, на котором интервьюер только просматривает ваше резюме и обсуждает ваш прошлый опыт.
                                                                            
-There are a couple of things you can do about it so it will be a less overwhelming experience:
+Есть несколько вещей, которые вы можете сделать, чтобы это было менее подавляющим опытом:
                                                                            
-1. You can and probably should ask the HR (in some cases even the team lead) how the interview process looks like. Some will be kind enough to even tell you how to prepare.
-2. Usually, the job posting gives more than a hint on where the focus will be and what you should focus on in your preparations so read it carefully.
-3. There are plenty of sites that have notes or a summary of the interview process in different companies, especially big enterprises.
+1. Вы можете и, вероятно, должны спросить у HR (в некоторых случаях даже у руководителя группы), как выглядит процесс собеседования. Некоторые будут достаточно любезны, чтобы даже рассказать вам, как подготовиться.
+2. Обычно в объявлении о вакансии дается больше, чем просто намек на то, где будет проходить собеседование и на чем вам следует сосредоточиться при подготовке, поэтому внимательно прочитайте его.
+3. Существует множество сайтов, на которых есть заметки или краткое описание процесса собеседования в различных компаниях, особенно крупных.
                                                                            
-### Don't forget to be an interviewer as well                              
+### Не забывайте быть и интервьюером.                              
                                                                            
-Some people tend to look at interviews as a one-way road of "Determining whether a candidate is qualified" but in reality, a candidate should also determine whether
-the company he/she is interviewing at, is the right place for him/her.            
+Некоторые люди склонны смотреть на собеседования как на дорогу с односторонним движением "Определить, насколько кандидат квалифицирован", но в действительности, кандидат также должен определить, является ли
+компания, в которой он/она проводит собеседование, является подходящим местом для него/нее.            
                                                                                                                  
-* Do I care about team size? More specifically, do I care about being a one-man show or being part of a bigger team?
-* Do I care about work-life balance?                                       
-* Do I care about personal growth and how it's practically done?           
-* Do I care about knowing what are my responsibilities as part of the role?                                                                                                  
+* Важен ли мне размер команды? Точнее, хочу ли я быть одним человеком или частью большой команды?
+* Забочусь ли я о балансе между работой и личной жизнью?                                       
+* Интересует ли меня личностный рост и как он практически осуществляется?           
+* Важно ли мне знать, каковы мои обязанности в рамках данной роли?                                                                                                  
                                                                            
-If you do, you should also play the interviewer role :)
+Если да, то вам стоит сыграть роль интервьюера :)
 
-### One Last Thing                                
+### И последнее.                                
                                                   
-[Good luck](https://youtu.be/AFUrG1-BAt4?t=59) :)
+[Удачи](https://youtu.be/AFUrG1-BAt4?t=59) :)
