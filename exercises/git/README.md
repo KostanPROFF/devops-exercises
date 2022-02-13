@@ -2,62 +2,62 @@
 
 |Name|Topic|Objective & Instructions|Solution|Comments|
 |--------|--------|------|----|----|
-| My first Commit | Commit | [Exercise](exercises/git/commit_01.md) | [Solution](exercises/git/solutions/commit_01_solution.md) | |
-| Time to Branch | Branch | [Exercise](exercises/git/branch_01.md) | [Solution](exercises/git/solutions/branch_01_solution.md) | |
-| Squashing Commits | Commit | [Exercise](exercises/git/squashing_commits.md) | [Solution](exercises/git/solutions/squashing_commits.md) | |
+| Мой первый коммит | Commit | [Exercise](exercises/git/commit_01.md) | [Solution](exercises/git/solutions/commit_01_solution.md) | | |
+| Time to Branch | Branch | [Exercise](exercises/git/branch_01.md) | [Solution](exercises/git/solutions/branch_01_solution.md) | | |
+| Squashing Commits | Commit | [Exercise](exercises/git/squashing_commits.md) | [Solution](exercises/git/solutions/squashing_commits.md) | | |
 
 <details>
-<summary>How do you know if a certain directory is a git repository?</summary><br><b>
+<summary>Как узнать, является ли определенный каталог репозиторием git? </summary><br><b>
 
-You can check if there is a ".git" directory.
+Вы можете проверить, существует ли каталог ".git".
 </b></details>
 
 <details>
-<summary>Explain the following: <code>git directory</code>, <code>working directory</code> and <code>staging area</code></summary><br><b>
+<summary>Объясните следующее: < code>git directory</code>, < code>working directory</code> и < code>staging area</code></summary><br><b>
 
-This answer taken from [git-scm.com](https://git-scm.com/book/en/v1/Getting-Started-Git-Basics#_the_three_states)
+Этот ответ взят с сайта [git-scm.com](https://git-scm.com/book/en/v1/Getting-Started-Git-Basics#_the_three_states)
 
-"The Git directory is where Git stores the meta data and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.
+"Каталог Git" - это место, где Git хранит метаданные и базу данных объектов для вашего проекта. Это самая важная часть Git'а, и именно она копируется при клонировании репозитория с другого компьютера.
 
-The working directory is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.
+Рабочий каталог представляет собой один чек-аут одной версии проекта. Эти файлы извлекаются из сжатой базы данных в каталоге Git и помещаются на диск для использования или изменения.
 
-The staging area is a simple file, generally contained in your Git directory, that stores information about what will go into your next commit. It’s sometimes referred to as the index, but it’s becoming standard to refer to it as the staging area."
+Область постановки - это простой файл, обычно содержащийся в вашей директории Git, в котором хранится информация о том, что войдет в ваш следующий коммит. Иногда его называют индексом, но в последнее время становится стандартным называть его областью постановки".
 </b></details>
 
 <details>
-<summary>What is the difference between <code>git pull</code> and <code>git fetch</code>?</summary><br><b>
+<summary>В чем разница между < code>git pull</code> и < code>git fetch</code>? </summary><br><b>
 
-Shortly, git pull = git fetch + git merge
+Вкратце, git pull = git fetch + git merge
 
-When you run git pull, it gets all the changes from the remote or central
-repository and attaches it to your corresponding branch in your local repository.
+Когда вы запускаете git pull, он получает все изменения с удаленного или центрального сервера.
+репозитория и прикрепляет его к соответствующей ветке в вашем локальном репозитории.
 
-git fetch gets all the changes from the remote repository, stores the changes in
-a separate branch in your local repository
+git fetch получает все изменения из удаленного хранилища, сохраняет изменения в
+отдельную ветвь в вашем локальном репозитории
 </b></details>
 
 <details>
-<summary>How to check if a file is tracked and if not, then track it?</summary><br><b>
+<summary>Как проверить, отслеживается ли файл, и если нет, то отследить его?</summary><br><b>
 
-There are different ways to check whether a file is tracked or not:
+Существуют различные способы проверки того, отслеживается ли файл или нет:
 
-  - `git ls-file <file>` -> exit code of 0 means it's tracked
+  - `git ls-file <file>` -> код выхода 0 означает, что он отслежен
   - `git blame <file>`
   ...
 </b></details>
 
 <details>
-<summary>How can you see which changes have done before committing them?</summary><br><b>
+<summary>Как можно увидеть, какие изменения были сделаны до их фиксации?</summary><br><b>
 
-`git diff```
+`git diff``.
 </b></details>
 
 <details>
-<summary>What <code>git status</code> does?</summary><br><b>
+<summary>Что делает < code>git status</code>? </summary><br><b>
 </b></details>
 
 <details>
-<summary>You have two branches - main and devel. How do you make sure devel is in sync with main?</summary><br><b>
+<summary>У вас есть две ветки - main и devel. Как убедиться, что devel синхронизируется с main? </summary><br><b>
 
 ```
 git checkout main
@@ -70,7 +70,7 @@ git merge main
 #### Git - Merge
 
 <details>
-<summary>You have two branches - main and devel. How do you put devel into main?</summary><br><b>
+<summary>У вас есть две ветви - main и devel. Как поместить devel в main? </summary><br><b>
 
 git checkout main
 git merge devel
@@ -78,67 +78,67 @@ git push origin main
 </b></details>
 
 <details>
-<summary>How to resolve git merge conflicts?</summary><br><b>
+<summary>Как разрешить конфликты слияния git? </summary><br><b>
 
-<p>
-First, you open the files which are in conflict and identify what are the conflicts.
-Next, based on what is accepted in your company or team, you either discuss with your
-colleagues on the conflicts or resolve them by yourself
-After resolving the conflicts, you add the files with `git add <file_name>`
-Finally, you run `git rebase --continue`
+< p>
+Сначала вы открываете файлы, которые находятся в конфликте, и определяете, в чем заключается конфликт.
+Далее, исходя из того, что принято в вашей компании или команде, вы либо обсуждаете с вашим
+коллеги по конфликтам или разрешить их самостоятельно
+После разрешения конфликтов вы добавляете файлы с помощью `git add <имя_файла>`.
+Наконец, вы запускаете `git rebase --continue`.
 </p>
 </b></details>
 
 <details>
-<summary>What merge strategies are you familiar with?</summary><br><b>
+<summary>С какими стратегиями слияния вы знакомы? </summary><br><b>
 
-Mentioning two or three should be enough and it's probably good to mention that 'recursive' is the default one.
+Упоминания двух или трех должно быть достаточно, и, вероятно, будет полезно упомянуть, что "рекурсивный" - это тот, который используется по умолчанию.
 
-recursive
-resolve
-ours
-theirs
+рекурсивный
+решить
+наш
+их
 
-This page explains it the best: https://git-scm.com/docs/merge-strategies
+Эта страница объясняет это лучше всего: https://git-scm.com/docs/merge-strategies
 </b></details>
 
 <details>
-<summary>Explain Git octopus merge</summary><br><b>
+<summary>Объяснение Git octopus merge</summary><br><b>
 
-Probably good to mention that it's:
+Наверное, хорошо бы упомянуть, что это:
 
-  * It's good for cases of merging more than one branch (and also the default of such use cases)
-  * It's primarily meant for bundling topic branches together
+  * Это хорошо для случаев слияния более чем одной ветки (а также по умолчанию для таких случаев)
+  * В основном он предназначен для объединения ветвей тем вместе
 
-This is a great article about Octopus merge: http://www.freblogg.com/2016/12/git-octopus-merge.html
+Это отличная статья о слиянии осьминогов: http://www.freblogg.com/2016/12/git-octopus-merge.html.
 </b></details>
 
 <details>
-<summary>What is the difference between <code>git reset</code> and <code>git revert</code>?</summary><br><b>
+<summary>В чем разница между < code>git reset</code> и < code>git revert</code>? </summary><br><b>
 
-<p>
+< p>
 
-`git revert` creates a new commit which undoes the changes from last commit.
+`git revert` создает новый коммит, который отменяет изменения последнего коммита.
 
-`git reset` depends on the usage, can modify the index or change the commit which the branch head
-is currently pointing at.
+`git reset` зависит от использования, может изменить индекс или изменить коммит, который возглавляет ветвь.
+в настоящее время указывает на.
 </p>
 </b></details>
 
 #### Git - Rebase
 
 <details>
-<summary>You would like to move forth commit to the top. How would you achieve that?</summary><br><b>
+<summary>Вы хотели бы продвинуться вперед и занять первое место. Как бы вы этого добились? </summary><br><b>
 
-Using the `git rebase` command
+Использование команды `git rebase`
 </b></details>
 
 <details>
-<summary>In what situations are you using <code>git rebase</code>?</summary><br><b>
+<summary>В каких ситуациях вы используете < code>git rebase</code>? </summary><br><b>
 </b></details>
 
 <details>
-<summary>How do you revert a specific file to previous commit?</summary><br><b>
+<summary>Как вернуть определенный файл к предыдущему коммиту?</summary><br><b>
 
 ```
 git checkout HEAD~1 -- /path/of/the/file
@@ -146,55 +146,55 @@ git checkout HEAD~1 -- /path/of/the/file
 </b></details>
 
 <details>
-<summary>How to squash last two commits?</summary><br><b>
+<summary>Как сжать два последних коммита?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the <code>.git</code> directory? What can you find there?</summary><br><b>
-	The <code>.git</code> folder contains all the information that is necessary for your project in version control and all the information about commits, remote repository address, etc. All of them are present in this folder. It also contains a log that stores your commit history so that you can roll back to history.
+<summary>Что такое каталог < code>.git</code>? Что вы можете там найти? </summary><br><b>
+  В папке   < code>.git</code> содержится вся информация, необходимая для работы вашего проекта в системе контроля версий, а также вся информация о коммитах, адресе удаленного репозитория и т. д. Все они присутствуют в этой папке. Она также содержит журнал, в котором хранится история коммитов, чтобы вы могли откатиться к истории.
 
 
-This info copied from [https://stackoverflow.com/questions/29217859/what-is-the-git-folder](https://stackoverflow.com/questions/29217859/what-is-the-git-folder)
+Эта информация скопирована с [https://stackoverflow.com/questions/29217859/what-is-the-git-folder](https://stackoverflow.com/questions/29217859/what-is-the-git-folder)
 </b></details>
 
 <details>
-<summary>What are some Git anti-patterns? Things that you shouldn't do</summary><br><b>
+<summary>Каковы некоторые анти-паттерны Git? Вещи, которые не следует делать</summary><br><b>
 
-  * Not waiting too long between commits
-  * Not removing the .git directory :)
+  * Не ждать слишком долго между коммитами
+  * Не удалять каталог .git :)
 </b></details>
 
 <details>
-<summary>How do you remove a remote branch?</summary><br><b>
+<summary>Как удалить удаленную ветку?</summary><br><b>
 
-You delete a remote branch with this syntax:
+Вы удаляете удаленную ветвь с помощью этого синтаксиса:
 
-git push origin :[branch_name]
+git push origin :[имя_ветви]
 </b></details>
 
 <details>
-<summary>Are you familiar with gitattributes? When would you use it?</summary><br><b>
+<summary>Знакомы ли вы с gitattributes? Когда вы будете его использовать? </summary><br><b>
 
-gitattributes allow you to define attributes per pathname or path pattern.<br>
+gitattributes позволяет определять атрибуты для каждого имени пути или шаблона пути.< br>
 
-You can use it for example to control endlines in files. In Windows and Unix based systems, you have different characters for new lines (\r\n and \n accordingly). So using gitattributes we can align it for both Windows and Unix with `* text=auto` in .gitattributes for anyone working with git. This is way, if you use the Git project in Windows you'll get \r\n and if you are using Unix or Linux, you'll get \n.
+Вы можете использовать его, например, для контроля конечных строк в файлах. В системах на базе Windows и Unix для новых строк используются разные символы (\r\n и \n соответственно). Поэтому, используя gitattributes, мы можем выровнять их для Windows и Unix с помощью `* text=auto` в .gitattributes для всех, кто работает с git. Таким образом, если вы используете Git-проект в Windows, вы получите \r\n, а если в Unix или Linux, то \n.
 </b></details>
 
 <details>
-<summary>How do you discard local file changes? (before commit)</summary><br><b>
+<summary>Как отменить изменения локальных файлов? (до фиксации)</summary><br><b>
 
-`git checkout -- <file_name>`
+`git checkout -- <имя_файла>`
 </b></details>
 
 <details>
-<summary>How do you discard local commits?</summary><br><b>
+<summary>Как отбрасывать локальные коммиты?</summary><br><b>
 
-`git reset HEAD~1` for removing last commit
-If you would like to also discard the changes you `git reset --hard``
+`git reset HEAD~1` для удаления последнего коммита
+Если вы хотите также отменить изменения, вы `git reset --hard``.
 </b></details>
 
 <details>
-<summary>True or False? To remove a file from git but not from the filesystem, one should use <code>git rm </code></summary><br><b>
+<summary> Правда или ложь? Чтобы удалить файл из git, но не из файловой системы, нужно использовать < code>git rm </code></summary><br><b>
 
-False. If you would like to keep a file on your filesystem, use `git reset <file_name>`
+Ложь. Если вы хотите сохранить файл в вашей файловой системе, используйте `git reset <имя_файла>`.
 </b></details>
