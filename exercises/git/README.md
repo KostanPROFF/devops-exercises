@@ -71,10 +71,11 @@ git merge main
 
 <details>
 <summary>У вас есть две ветви - main и devel. Как поместить devel в main? </summary><br><b>
-
+```
 git checkout main
 git merge devel
 git push origin main
+```
 </b></details>
 
 <details>
